@@ -1,7 +1,7 @@
-package com.dragon.banana.common.exception;
+package com.dragon.banana.base.exception;
 
-import com.dragon.banana.common.response.BizResponse;
-import com.dragon.banana.common.response.ResultCode;
+import com.dragon.banana.base.response.BizResponse;
+import com.dragon.banana.base.response.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.ModelMap;

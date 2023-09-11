@@ -1,4 +1,4 @@
-package com.dragon.banana.common.response;
+package com.dragon.banana.base.response;
 
 import io.swagger.annotations.ApiModel;
 import lombok.Getter;
