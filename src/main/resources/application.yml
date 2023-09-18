@@ -1,0 +1,30 @@
+server:
+  port: 8081
+  tomcat:
+    max-connections: 200
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://47.93.77.234:38088/LargeBoreMaterial?useUnicode=true&characterEncoding=UTF-8&useSSL=True
+    username: root
+    password: root123
+  redis:
+    database: 0
+    host: 47.93.77.234
+    port: 56379
+    jedis:
+      pool:
+        max-active: 200
+
+# 配置mybatis-plus规则
+mybatis-plus:
+  # 自定义sql映射文件目录路径
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #    是否开启使用驼峰式命名
+    map-underscore-to-camel-case: false
+    #    控制台打印sql日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+

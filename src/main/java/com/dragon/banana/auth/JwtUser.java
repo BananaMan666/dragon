@@ -18,7 +18,7 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class JwtUser {
     @NotBlank(message = "用户名不能为空")
-    private String userName;
+    private String ldap;
     @NotBlank(message = "密码不能为空")
     private String password;
     private String role;
