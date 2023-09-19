@@ -32,6 +32,7 @@ public class AuthUserServiceImpl extends ServiceImpl<AuthUserMapper, AuthUser> i
         //判断jwtUser登录信息
         AuthUser authUser = new AuthUser();
         authUser.setUsername("aaa").setLdap(jwtUser.getLdap()).setPassword(jwtUser.getPassword());
+        authUser.setPhone("123").setCreater("234");
         save(authUser);
         return String.valueOf(authUser.getId());
     }
