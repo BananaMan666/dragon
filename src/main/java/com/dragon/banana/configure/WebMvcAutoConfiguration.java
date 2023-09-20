@@ -24,7 +24,7 @@ public class WebMvcAutoConfiguration implements WebMvcConfigurer {
                 .addPathPatterns("/**")
                 .excludePathPatterns("/swagger-resources/**")
                 .excludePathPatterns("/jwtUser/login")
-                .excludePathPatterns("/register")
+                .excludePathPatterns("/jwtUser/register")
                 ;
     }
 }
